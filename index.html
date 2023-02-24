@@ -37,17 +37,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://visionetsystemsinc3-dev-ed.develop.my.salesforce.com',
-			'https://visionetsystemsinc3-dev-ed.develop.my.site.com/',
+			'https://resilient-panda-lb7fwj-dev-ed.trailblaze.my.salesforce.com',
+			'https://resilient-panda-lb7fwj-dev-ed.trailblaze.my.salesforce-sites.com/liveAgentSetupFlow',
 			gslbBaseURL,
-			'00D5g00000HKxU0',
-			'Group',
+			'00D2w00000ISY38',
+			'ChatTeam',
 			{
-				baseLiveAgentContentURL: 'https://c.la2-c1-hnd.salesforceliveagent.com/content',
-				deploymentId: '5725g000000tLCq',
-				buttonId: '5735g000000tOvZ',
-				baseLiveAgentURL: 'https://d.la2-c1-hnd.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Group',
+				baseLiveAgentContentURL: 'https://c.la2-c2-hnd.salesforceliveagent.com/content',
+				deploymentId: '5722w000000A07Q',
+				buttonId: '5732w000000ADl6',
+				baseLiveAgentURL: 'https://d.la2-c2-hnd.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'ChatTeam',
 				isOfflineSupportEnabled: true
 			}
 		);
@@ -55,7 +55,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://visionetsystemsinc3-dev-ed.develop.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://resilient-panda-lb7fwj-dev-ed.trailblaze.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
