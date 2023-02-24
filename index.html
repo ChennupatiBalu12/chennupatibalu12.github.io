@@ -37,16 +37,16 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://visionetsystemsinc3-dev-ed.develop.my.salesforce.com',
-			'https://visionetsystemsinc3-dev-ed.develop.my.site.com/',
+			'https://icroz7-dev-ed.my.salesforce.com',
+			'https://icroz7-dev-ed.my.site.com/Testingvforcesite',
 			gslbBaseURL,
-			'00D5g00000HKxU0',
+			'00D5j0000047bnZ',
 			'Group',
 			{
-				baseLiveAgentContentURL: 'https://c.la2-c1-hnd.salesforceliveagent.com/content',
-				deploymentId: '5725g000000tLCq',
-				buttonId: '5735g000000tOvZ',
-				baseLiveAgentURL: 'https://d.la2-c1-hnd.salesforceliveagent.com/chat',
+				baseLiveAgentContentURL: 'https://c.la2-c2-ukb.salesforceliveagent.com/content',
+				deploymentId: '5725j000000Y2Dd',
+				buttonId: '5735j000000cG92',
+				baseLiveAgentURL: 'https://d.la2-c2-ukb.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'Group',
 				isOfflineSupportEnabled: true
 			}
@@ -55,7 +55,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://visionetsystemsinc3-dev-ed.develop.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://icroz7-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
